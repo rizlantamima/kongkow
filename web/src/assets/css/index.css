@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: 'PlusJakartaSans';
+        src: url('../fonts/PlusJakartaSans/PlusJakartaSans-Regular.ttf') format('truetype') font-weight-normal,
+        url('../fonts/PlusJakartaSans/PlusJakartaSans-Italic.ttf') format('truetype') font-italic font-weight-normal,
+        url('../fonts/PlusJakartaSans/PlusJakartaSans-Light.ttf') format('truetype') font-weight-light,
+        url('../fonts/PlusJakartaSans/PlusJakartaSans-LightItalic.ttf') format('truetype') font-italic font-weight-light,
+        url('../fonts/PlusJakartaSans/PlusJakartaSans-Medium.ttf') format('truetype') font-weight-medium,
+        url('../fonts/PlusJakartaSans/PlusJakartaSans-MediumItalic.ttf') format('truetype') font-italic font-weight-medium,
+        url('../fonts/PlusJakartaSans/PlusJakartaSans-SemiBold.ttf') format('truetype') font-weight-semi-bold,
+        url('../fonts/PlusJakartaSans/PlusJakartaSans-SemiBoldItalic.ttf') format('truetype') font-italic font-weight-semi-bold,
+        url('../fonts/PlusJakartaSans/PlusJakartaSans-Bold.ttf') format('truetype') font-weight-bold,
+        url('../fonts/PlusJakartaSans/PlusJakartaSans-BoldItalic.ttf') format('truetype') font-italic font-weight-bold,
+        url('../fonts/PlusJakartaSans/PlusJakartaSans-ExtraBold.ttf') format('truetype') font-weight-extra-bold,
+        url('../fonts/PlusJakartaSans/PlusJakartaSans-ExtraBoldItalic.ttf') format('truetype') font-italic font-weight-extra-bold;
+    }    
+}
+
+@layer components {
+    .input-std {
+        @apply font-jakarta w-full border-2 border-gray-300 p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
+    }
+
+    .btn-primary {
+      @apply py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 disabled:pointer-events-none;
+    }
+}
